@@ -1,0 +1,10 @@
+<?php
+class DB extends PDO {
+	public function __construct() {
+		$dns = 'mysql:host=HOST;dbname=DBNAME;charset=utf8';
+		$user = 'USER';
+		$pass = 'PASS';
+		parent::__construct($dns, $user, $pass);
+		$this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	}
+}

@@ -3,9 +3,9 @@
 <head>
 	<title>Leung Center for Cosmology and Particle Astrophysics, National Taiwan University - 梁次震宇宙學與粒子天文物理學研究中心</title>
 	<meta charset="utf-8">
-	<link href="ara.css" rel="stylesheet">
-	<link href="1.css" rel="stylesheet">
-	<link href="main.css" rel="stylesheet">
+	<link href="css/ara.css" rel="stylesheet">
+	<link href="css/1.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 	{literal}
 	<style>
 	table.main {width: 720px;}

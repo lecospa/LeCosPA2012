@@ -1,0 +1,106 @@
+body {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt;
+	FONT-FAMILY: Arial,?s?ө???;
+	word-wrap: break-word;
+	word-break: normal;
+	TEXT-DECORATION: none;
+	text-align: justify;
+}
+a:link {
+	color: #000000;
+	TEXT-DECORATION: none;
+	TEXT-DECORATION: underline;
+}
+a:visited {
+	color: #0175a4;
+	TEXT-DECORATION: none;
+}
+a:hover {
+	color: #000000;
+	TEXT-DECORATION: none;
+}
+
+table,tr,td {
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+	text-align:left;
+
+word-wrap: break-word;
+word-break: break-all;
+word-break: normal;
+
+
+}
+
+table.F10size {
+	FONT-SIZE: 3 pt;
+	TEXT-DECORATION: none;
+	text-align: justify;
+}
+
+.tmenu A {
+	TEXT-DECORATION: none;
+}
+
+.tmenu2 A {
+	TEXT-DECORATION: none;
+	FONT-SIZE: 13pt;
+}
+
+.tmain {
+	FONT-SIZE: 12pt;
+}
+
+h1 {
+	margin: 5px 0 5px 0;
+	background: none transparent scroll repeat 0% 0%;
+	font-weight: bold;
+	/*color: #3366ff;*/
+	color: #ff3366;
+}
+
+h2 {
+MARGIN-TOP: 5 px;
+BACKGROUND: none transparent scroll repeat 0% 0%;
+MARGIN-BOTTOM: 5 px;
+FONT-WEIGHT: bold;
+FONT-SIZE: 13 pt;
+//COLOR: #3366ff;
+COLOR: green;
+}
+
+H3 {
+MARGIN-TOP: 7 px;
+BACKGROUND: none transparent scroll repeat 0% 0%;
+MARGIN-BOTTOM: 7 px;
+FONT-WEIGHT: bold;
+FONT-SIZE: 13 pt;
+COLOR: #333333;
+}
+
+
+.font-b12 {
+font-size: 12.0pt;
+}
+.font-b12blue {
+font-size: 12.0pt;
+COLOR: darkblue;
+}
+.font-b12Gray {
+font-size: 10.0pt;
+font-weight: bold;
+COLOR: Gray;
+}
+
+
+div.view-header
+{
+position: relative;
+z-index: 3;
+top: -1.1em;
+display: inline;
+font-size: 125%;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 3px solid #ff3366;
+}

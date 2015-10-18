@@ -1,0 +1,95 @@
+{extends file="main.tpl"}
+{block name="contents"}
+<style>
+table#contact_form {
+	border: 0; border-collpase: collpase;
+}
+table#contact_form tr {
+	border-bottom: 0px solid #000;
+}
+table#contact_form th {
+	background-color: #666666; color: white; padding: 5px;
+	width: 300px;
+	text-align: right;
+}
+</style>
+<script>
+window.history.forward(1);
+</script>
+<script>
+function grabEnter() {
+	if (event.keyCode == 13) {
+		event.returnValue=false;
+	}
+}
+function locknload(f) {
+	if (f.Name.value == '') {
+		alert("Please insert your first name");
+		f.Name.focus();
+		return false;
+	}
+	if (f.Lastname.value == '') {
+		alert("Please insert your lastname");
+		f.Lastname.focus();
+		return false;
+	}
+	if (f.E_mail.value == '') {
+		alert("Please insert your email");
+		f.E_mail.focus();
+		return false;
+	}
+	if (f.Note_1.value == '') {
+		alert("Please insert your Message");
+		f.E_mail.focus();
+		return false;
+	}
+	return true;
+}
+</script>
+<h1 align="center">CONTACT US</h1>
+<h2 align="center">The fields marked with <img src="./images/point.gif"> must be filled.</h2>
+<p>Please leave your valued comments or questions below, we will reply to you as soon as possible. Thank you.</p>
+<form method="POST" action="contact2_up.php" onSubmit="return locknload(this);">
+	<table id="contact_form">
+		<tr>
+			<th>Title (Prof., Dr., Mr., Mrs., Miss)&nbsp;</th>
+			<td><input type="text" name="Title" size="60"></td>
+		</tr>
+		<tr>
+			<th>Firstname&nbsp;<img src="./images/point.gif"></th>
+			<td>
+				<input type="text" name="Name" onkeydown="grabEnter()" SIZE="60">
+			</td>
+		</tr>
+
+		<tr>
+			<th>Lastname&nbsp;<img src="./images/point.gif"></th>
+			<td>
+				<input type="text" name="Lastname" onkeydown="grabEnter()" SIZE="60">
+			</td>
+		</tr>
+
+		<tr>
+			<th>E-mail&nbsp;<img src="./images/point.gif"></th>
+			<td>
+				<input type="text" name="E_mail" onkeydown="grabEnter()" SIZE="60">
+			</td>
+		</tr>
+
+		<tr>
+			<th>Message to the conference organizers&nbsp;<img src="./images/point.gif"></th>
+			<td>
+				<textarea rows="8" name="Note_1" cols="47"></textarea>
+			</td>
+		</tr>
+	</table>
+	<div align="center">
+		<table border="0" cellspacing="4">
+			<tr>
+				<td align="center"><font size="3"><input type="submit" name="-new" value="SUBMIT"></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	<br><br><br><br><br><br><br><br>
+	{/block}
